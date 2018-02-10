@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-table.css">
+  <script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="bootstrap-table.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="test.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+</head>
+
+<body>
+  <table data-toggle="table"
+         data-url="https://api.github.com/users/wenzhixin/repos"
+         data-query-params="queryParams"
+         data-pagination="true"
+         data-search="true"
+         data-height="300">
+      <thead>
+      <tr>
+          <th data-field="name">Name</th>
+          <th data-field="stargazers_count">Stars</th>
+          <th data-field="forks_count">Forks</th>
+          <th data-field="description">Description</th>
+      </tr>
+      </thead>
+  </table>
+</body>
+
+</html>
